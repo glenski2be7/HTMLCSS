@@ -51,11 +51,16 @@
   </div>
 
   <script>
+    function clickHandler() {
+      console.log('Mam Cię!');
+    }
+    // ES6 style
+    // const clickHandler = () => {
+    //   console.log('Mam Cię!');
+    // }
     const elem = document.getElementById('button-1');
     console.log(elem);
-    elem.addEventListener('click', () => {
-      console.log('Mam Cię!');
-    });
+    elem.addEventListener('click', clickHandler);
   </script>
 </body>
 </html>
