@@ -7,18 +7,17 @@
     <title>Document</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <script>
-            const myNumber = Math.floor((Math.random()*100) + 1);
+            const myNumber = Math.floor((Math.random() * 100) + 1);
             console.log(`My number = ${myNumber}`);
 
-            const text = parseInt (prompt('Podaj liczbe'), 10);
-            if (text < prompt) {
-                console.log('Za mala liczba');
-            } else if (text > myNumber) {
-                console.log('Za duża liczba');
-            } else if (text === myNumber) {
-                console.log('Trafiłes!');
+            let text;
+            while (text = parseInt(prompt('Podaj liczbę'), 10) !== myNumber) {
+                if (text < myNumber) {
+                    console.log('Za mała liczba');
+                } else if (text > myNumber) {
+                    console.log('Za duża liczba');
+                }
             }
-
     </script>
 </head>
 <body>
