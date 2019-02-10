@@ -1,43 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <script>
-            const myNumber = Math.floor(Math.random() * 100 + 1);
-            console.log(`My number = ${myNumber}`);
-            const text = parseInt(prompt('Podaj liczbę'), 10);
-            if (text > myNumber){
-                console.log('Za duża liczba');
-            } else if (text < myNumber) {
-                console.log('Za mała liczba');
-            } else if (text === myNumber) {
-                console.log('Trafiłeś!');
-            }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script>
+    // nie umieszczać tutaj skryptów! Chyba e trzeba to te nie!
+    const myNumber = Math.floor((Math.random() * 100) + 1);
+    console.log(`My number = ${myNumber}`);
+    let text;
+    let guessNumber = 0;
+    // while (text = parseInt(prompt('Podaj liczbę'), 10) !== myNumber) {
+    //   if (text < myNumber) {
+    //     console.log('Za mała liczba');
+    //   } else if (text > myNumber) {
+    //     console.log('Za duza liczba');
+    //   }
+    //   // guessNumber = guessNumber + 1;
+    //   guessNumber++;
+    // }
+    // if (text < myNumber) {
+    //   console.log('Za mała liczba');
+    // } else if (text > myNumber) {
+    //   console.log('Za duza liczba');
+    // } else if (text === myNumber) {
+    //   console.log('Trafiłeś! Hurra');
+    // }
+  </script>
 </head>
 <body>
+  <div>
+    <h1 style="color: red; background-color: aqua;">Hello JJDZL1</h1>
+    <p id="para-1" class="text f22">Zajęcia z HTML i CSS</p>
+    <button id="button-1" class="f22 radius">Kliknij mnie, proszę</button>
+    <ul>
+      <li>Raz</li>
+      <li>Dwa</li>
+      <li>Trzy</li>
+      <li>Cztery</li>
+      <li>Pieć</li>
+    </ul>
     <div>
-        <h1s>Hello JJDZL1</h1>
-        <p id="para-1" class="text f22">Zajecia z HTML i CSS</p>
-        <button class="f22 radius">Kliknij mnie</button>
-
-        <ul>
-            <li>raz</li>
-            <li>dwa</li>
-            <li>trzy</li>
-            <li>cztery</li>
-            <li>pięć</li>
-        </ul>
-
-        <div>
-            <a href="http://wp.pl" target="">Idź do WP.pl</a>
-            <a href="http://onet.pl" target="">Idź do ONET.pl</a>
-            <a href="http://sport.pl" target="">Idź do SPORT.pl</a>
-        </div>
+        <a href="https://wp.pl">Idź do WP.pl</a>
+        <a href="https://onet.pl">Idź do Onet</a>
+        <a href="https://sport.pl">Idź do Sport.pl</a>
     </div>
+
+  </div>
+
+  <script>
+    const elem = document.getElementById('button-1');
+    console.log(elem);
+    elem.addEventListener('click', () => {
+      console.log('Mam Cię!');
+    });
+  </script>
 </body>
 </html>
