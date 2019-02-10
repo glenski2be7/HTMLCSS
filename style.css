@@ -1,0 +1,39 @@
+h1 {
+    color:red; 
+    background-color: aqua;
+}
+
+#para-1 {
+    font-size: 32px;
+    background-color: yellowgreen;
+}
+#para-1:hover {
+    font-weight: 800;
+}
+.text {
+    background-color: pink;
+    color: green;
+    margin: 10px;
+    border: rgb(43, 39, 4) 2px dotted;
+    padding: 16px;
+}
+.f22 {
+    font-size: 22px;
+    background-color: #5e1f1f;
+}
+.radius {
+    border-radius: 6px;
+}
+* {
+    margin: 20px;
+    padding: 20px;
+}
+a {
+    color: magenta;
+}
+a:hover {
+    color: yellow;
+}
+a:visited {
+    color: red;
+}
